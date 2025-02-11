@@ -1,4 +1,5 @@
 import { BlogPosts } from 'app/components/posts'
+import { ProjectPosts } from './components/projects'
 
 export default function Page() {
   return (
@@ -11,9 +12,16 @@ export default function Page() {
         where I focus on creating advertiser exoeriences that connect creators, customers and businesses.
         Before Google, I was designing TV and cloud products at Swisscom and a variety of corporate websites at Internezzo
       </p>
-      <div className="my-8">
+    <div className="my-8">
       <h2 className="mb-8 text-lg font-semibold tracking-tighter">
         Projects I've enjoyed working on:
+      </h2>
+        <ProjectPosts />
+      </div>
+      
+      <div className="my-8">
+      <h2 className="mb-8 text-lg font-semibold tracking-tighter">
+        Blog posts:
       </h2>
         <BlogPosts />
       </div>
