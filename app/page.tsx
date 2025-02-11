@@ -4,16 +4,17 @@ export default function Page() {
   return (
     <section>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
+        Hello – I'm a user experience and interface designer for digital products based in Switzerland.
       </h1>
       <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
+        I'm Matthias Koch, a UX designer currently working on <a href="https://ads.google.com" target="_blank">Google Ads</a> 
+        where I focus on creating advertiser exoeriences that connect creators, customers and businesses.
+        Before Google, I was designing TV and cloud products at Swisscom and a variety of corporate websites at Internezzo
       </p>
       <div className="my-8">
+      <h2 className="mb-8 text-lg font-semibold tracking-tighter">
+        Projects I've enjoyed working on:
+      </h2>
         <BlogPosts />
       </div>
     </section>
