@@ -4,15 +4,9 @@ const navItems = {
   '/': {
     name: 'Matthias Koch',
   },
-  '/projects': {
-    name: 'Projects',
-  },
   '/blog': {
     name: 'Blog',
-  },
-  '/about': {
-    name: 'About',
-  },
+  }
 }
 
 export function Navbar() {
