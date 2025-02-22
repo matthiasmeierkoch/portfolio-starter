@@ -9,7 +9,8 @@ export default function Page() {
       </h1>
       <p className="mb-4">
         I'm Matthias Koch, a UX designer currently working on <a href="https://ads.google.com" target="_blank">Google Ads</a> 
-        where I focus on creating advertiser exoeriences that connect creators, customers and businesses.
+        &nbsp;where I focus on creating advertiser experiences that connect creators, customers and businesses.</p>
+        <p>
         Before Google, I was designing TV and cloud products at Swisscom and a variety of corporate websites at Internezzo
       </p>
 
