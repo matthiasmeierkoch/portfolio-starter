@@ -2,7 +2,7 @@ import fs from 'fs'
 import path from 'path'
 
 type Metadata = {
-  projectname: string
+  title: string
   publishedAt: string
   summary: string
   image?: string
@@ -49,8 +49,8 @@ function getMDXData(dir) {
   })
 }
 
-export function getProjectPosts() {
-  return getMDXData(path.join(process.cwd(), 'app', 'projects', 'posts'))
+export function getBlogPosts() {
+  return getMDXData(path.join(process.cwd(), 'app', 'projects', 'projects'))
 }
 
 export function formatDate(date: string, includeRelative = false) {

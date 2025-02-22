@@ -1,8 +1,8 @@
 import Link from 'next/link'
-import { formatDate, getProjectPosts } from 'app/projects/utils'
+import { formatDate, getBlogPosts} from 'app/projects/utils'
 
 export function ProjectPosts() {
-  let allProjects = getProjectPosts()
+  let allProjects = getBlogPosts()
 
   return (
     <div>
@@ -18,15 +18,15 @@ export function ProjectPosts() {
         .map((post) => (
           <Link
             key={post.slug}
-            className="flex flex-col space-y-1 mb-4"
+            className="flex flex-col space-y-1 mb-4 bg-white dark:bg-gray-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5"
             href={`/projects/${post.slug}`}
           >
-            <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2">
-              <p className="text-neutral-600 dark:text-neutral-400 w-[100px] tabular-nums">
+            <div className="w-full">
+              <p className="text-neutral-600 dark:text-neutral-400 tabular-nums">
                 {formatDate(post.metadata.publishedAt, false)}
               </p>
               <p className="text-neutral-900 dark:text-neutral-100 tracking-tight">
-                {post.metadata.projectname}
+                {post.metadata.title}
               </p>
             </div>
           </Link>
