@@ -4,9 +4,11 @@ import { ProjectPosts } from './components/projects'
 export default function Page() {
   return (
     <section>
-      <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
-        Hello – I'm a user experience and interface designer for digital products based in Switzerland.
-      </h1>
+      <div className="mb-8 text-4xl font-semibold tracking-tighter">
+        <h1 className='mb-4 text-2xl'>Hello.</h1>
+        <div className="mb-4 text-xl"></div>
+        <h1>I'm a user experience and interface designer for digital products based in Switzerland.</h1>
+      </div>
     <div className="mb-4 text-xl">
       <p>
         I'm Matthias Koch, a UX designer currently working on <a href="https://ads.google.com" target="_blank">Google Ads</a> 
