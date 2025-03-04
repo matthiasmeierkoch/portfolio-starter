@@ -21,14 +21,18 @@ export function ProjectPosts() {
             className="flex flex-col space-y-1 mb-4 bg-white dark:bg-gray-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5"
             href={`/projects/${post.slug}`}
           >
-            <div className="w-full">
+      <div className='w-full flex flex-col md:flex-row space-x-0 md:space-x-2 justify-between'>
+        <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2">              
+            <p className=" text-xl text-neutral-900 dark:text-neutral-100 tracking-tight">
+                {post.metadata.title}
+            </p>
+          </div>
+          <div className='w-full flex flex-col md:flex-row justify-end'>
               <p className="text-neutral-600 dark:text-neutral-400 tabular-nums">
                 {formatDate(post.metadata.publishedAt, false)}
-              </p>
-              <p className="text-neutral-900 dark:text-neutral-100 tracking-tight">
-                {post.metadata.title}
-              </p>
-            </div>
+              </p>  
+          </div>
+        </div>
           </Link>
         ))}
     </div>
