@@ -5,11 +5,11 @@ export default function Page() {
   return (
     <section>
       <div className="mb-8 text-4xl font-semibold">
-        <h1 className='mb-4 text-2xl tracking-wide'>Hello.</h1>
-        <div className="mb-4 text-xl tracking-tighter"></div>
+        <h1 className='mb-4 text-2xl/tight tracking-wide'>Hello.</h1>
+        <div className="mb-4 text-xl/tight tracking-tighter"></div>
         <h1>I'm a user experience and interface designer for digital products based in Switzerland</h1>
       </div>
-    <div className="mb-4 text-xl tracking-normal">
+    <div className="mb-4 text-xl/relaxed tracking-normal">
       <p>
         I'm Matthias Koch, a user experience and interface designer currently working <a href="https://google.com" target="_blank" className="text-blue-600 visited:text-purple-600 bg-gray-100 dark:bg-gray-900 rounded-xl px-2 py-1">@Google</a> 
         &nbsp;where I currently focus advertiser experiences to connect creators, customers and businesses

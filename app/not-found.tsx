@@ -5,6 +5,7 @@ export default function NotFound() {
         404 - Page Not Found
       </h1>
       <p className="mb-4">The page you are looking for does not exist.</p>
+      <iframe src="https://giphy.com/embed/KBYyUGgDEsILK" width="480" height="240" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/reaction-KBYyUGgDEsILK">via GIPHY</a></p>
     </section>
   )
 }
