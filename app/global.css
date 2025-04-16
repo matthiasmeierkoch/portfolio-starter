@@ -100,6 +100,7 @@ h1 {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-style: italic;
+  line-height: 2.75rem;
 }
 
 .prose h1 {

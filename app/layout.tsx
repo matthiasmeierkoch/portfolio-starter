@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: 'Matthias Koch – UX Designer',
     description: 'This is my portfolio.',
     url: baseUrl,
-    siteName: 'My Portfolio',
+    siteName: 'Matthias Koch UX Design Portfolio',
     locale: 'en_US',
     type: 'website',
   },
@@ -54,7 +54,7 @@ export default function RootLayout({
     >
       <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
-          <Navbar />
+          <Navbar/>
           {children}
           <Footer />
           <Analytics />
