@@ -24,7 +24,7 @@ export function Navbar() {
           <div>
             <Link
               href="/"
-              className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle py-1 px-2 m-1 font-bold text-lg"
+              className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle py-1 px-2 m-1"
             >
               {navItems['/'].name}
             </Link>
