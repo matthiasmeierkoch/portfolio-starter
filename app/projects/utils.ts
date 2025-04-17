@@ -3,6 +3,8 @@ import path from 'path'
 
 type Metadata = {
   title: string
+  startDate: string
+  endDate: string
   publishedAt: string
   summary: string
   image?: string
@@ -55,6 +57,12 @@ export function getProjects() {
 
 export function formatDate(date: string, includeRelative = false) {
   let currentDate = new Date()
+
+  // If the date is not a valid date (e.g., "Present"), return it as-is
+  if (isNaN(Date.parse(date))) {
+    return date
+  }
+
   if (!date.includes('T')) {
     date = `${date}T00:00:00`
   }

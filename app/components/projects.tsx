@@ -9,7 +9,7 @@ export function ProjectPosts() {
       {allProjects
         .sort((a, b) => {
           if (
-            new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)
+            new Date(a.metadata.startDate) > new Date(b.metadata.startDate)
           ) {
             return -1
           }
@@ -35,10 +35,10 @@ export function ProjectPosts() {
               </p>
             </div>
 
-            {/* Right: Date */}
-            <div>
+            {/* Right: Start Date and End Date */}
+            <div className="flex flex-col items-end">
               <p className="text-neutral-600 dark:text-neutral-400 tabular-nums">
-                {formatDate(projects.metadata.publishedAt, false)}
+              {formatDate(projects.metadata.startDate, false)} - {formatDate(projects.metadata.endDate, false)}
               </p>
             </div>
           </Link>

@@ -90,9 +90,12 @@ export default function Project({ params }) {
         {project.metadata.title}
       </h1>
       <div className="flex justify-between items-center mt-2 mb-8 text-sm">
-        <p className="text-sm text-neutral-600 dark:text-neutral-400">
-          {formatDate(project.metadata.publishedAt)}
+              {/* Start Date and End Date */}
+      <div className="mb-4 text-neutral-600 dark:text-neutral-400">
+        <p>
+          {formatDate(project.metadata.startDate)} - {formatDate(project.metadata.endDate)}
         </p>
+      </div>
       </div>
       <article className="prose">
         <CustomMDX source={project.content} />
