@@ -6,14 +6,19 @@ import { baseUrl } from 'app/sitemap'
 export async function generateStaticParams() {
   let posts = getBlogPosts()
 
-  return posts.map((post) => ({
-    slug: post.slug,
-  }))
+  // Exclude static routes like /projects and /blog
+  return posts
+    .filter((post) => post.slug !== 'projects' && post.slug !== 'blog')
+    .map((post) => ({
+      slug: post.slug,
+    }))
 }
 
 export function generateMetadata({ params }) {
   let post = getBlogPosts().find((post) => post.slug === params.slug)
-  if (!post) {
+
+  // Exclude static routes like /projects and /blog
+  if (!post || params.slug === 'projects' || params.slug === 'blog') {
     return
   }
 
@@ -54,7 +59,8 @@ export function generateMetadata({ params }) {
 export default function Blog({ params }) {
   let post = getBlogPosts().find((post) => post.slug === params.slug)
 
-  if (!post) {
+  // Exclude static routes like /projects and /blog
+  if (!post || params.slug === 'projects' || params.slug === 'blog') {
     notFound()
   }
 
