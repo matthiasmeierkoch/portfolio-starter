@@ -112,7 +112,9 @@ h1 {
 
 .prose h2 {
   @apply text-xl font-medium tracking-tight mt-6 mb-2;
+  font-family: "SM Sans", sans-serif;
 }
+ 
 
 .prose h3 {
   @apply text-xl font-medium tracking-tight mt-6 mb-2;
