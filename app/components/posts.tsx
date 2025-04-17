@@ -18,17 +18,18 @@ export function BlogPosts() {
         .map((post) => (
           <Link
             key={post.slug}
-            className="flex flex-col space-y-1 mb-4 bg-white dark:bg-gray-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5"
+            className="flex items-center justify-between mb-4 bg-white dark:bg-gray-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5"
             href={`/blog/${post.slug}`}
           >
-            <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2">
-              <p className="text-neutral-600 dark:text-neutral-400 w-[100px] tabular-nums">
-                {formatDate(post.metadata.publishedAt, false)}
-              </p>
-              <p className="text-neutral-900 dark:text-neutral-100 tracking-tight">
-                {post.metadata.title}
-              </p>
-            </div>
+            {/* Title on the left */}
+            <p className="text-neutral-900 dark:text-neutral-100 tracking-tight text-lg w-2/4 truncate">
+              {post.metadata.title}
+            </p>
+
+            {/* Date on the right */}
+            <p className="text-neutral-600 dark:text-neutral-400 w-2/4 truncate text-right tabular-nums">
+              {formatDate(post.metadata.publishedAt, false)}
+            </p>
           </Link>
         ))}
     </div>

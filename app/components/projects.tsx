@@ -18,28 +18,28 @@ export function ProjectPosts() {
         .map((projects) => (
           <Link
             key={projects.slug}
-            className="flex flex-col space-y-1 mb-4 bg-white dark:bg-gray-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5"
+            className="flex items-center justify-between mb-4 bg-white dark:bg-gray-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5"
             href={`/projects/${projects.slug}`}
           >
-            <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2 justify-between">
-              {/* Image on the left */}
-              <div className="flex items-center space-x-4">
-                {projects.metadata.image && (
-                  <img
-                    src={projects.metadata.image}
-                    alt={projects.metadata.title}
-                    className="w-12 h-12 object-cover rounded-md"
-                  />
-                )}
-                <p className="text-xl text-neutral-900 dark:text-neutral-100 tracking-tight">
-                  {projects.metadata.title}
-                </p>
-              </div>
-              <div className="w-full flex flex-col md:flex-row justify-end">
-                <p className="text-neutral-600 dark:text-neutral-400 tabular-nums">
-                  {formatDate(projects.metadata.publishedAt, false)}
-                </p>
-              </div>
+            {/* Left: Image and Title */}
+            <div className="flex items-center space-x-4">
+              {projects.metadata.image && (
+                <img
+                  src={projects.metadata.image}
+                  alt={projects.metadata.title}
+                  className="w-12 h-12 object-cover rounded-md"
+                />
+              )}
+              <p className="text-neutral-900 dark:text-neutral-100 tracking-tight text-lg">
+                {projects.metadata.title}
+              </p>
+            </div>
+
+            {/* Right: Date */}
+            <div>
+              <p className="text-neutral-600 dark:text-neutral-400 tabular-nums">
+                {formatDate(projects.metadata.publishedAt, false)}
+              </p>
             </div>
           </Link>
         ))}
