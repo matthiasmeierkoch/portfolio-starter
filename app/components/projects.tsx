@@ -30,14 +30,14 @@ export function ProjectPosts() {
                   className="w-12 h-12 object-cover rounded-md"
                 />
               )}
-              <p className="text-neutral-900 dark:text-neutral-100 tracking-tight text-lg">
+              <p className="text-neutral-900 dark:text-neutral-100 tracking-tight w-4/4 truncate text-lg">
                 {projects.metadata.title}
               </p>
             </div>
 
             {/* Right: Start Date and End Date */}
             <div className="flex flex-col items-end">
-              <p className="text-stone-400 dark:text-stone-500 tabular-nums">
+              <p className="text-stone-400 dark:text-stone-500 w-4/4 truncate tabular-nums">
               {formatDate(projects.metadata.startDate, false)} - {formatDate(projects.metadata.endDate, false)}
               </p>
             </div>
