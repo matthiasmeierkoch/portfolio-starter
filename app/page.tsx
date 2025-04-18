@@ -22,14 +22,14 @@ export default function Page() {
     </div>
 
     <div className="my-8">
-      <h2 className="mb-4 text-stone-400 dark:text-stone-500 ">
+      <h2 className="mb-4 text-stone-400 dark:text-stone-500">
         Projects:
       </h2>
         <ProjectPosts />
       </div>
 
       <div className="my-8">
-      <h2 className="mb-8 text-lg font-semibold">
+      <h2 className="mb-4 text-stone-400 dark:text-stone-500">
         Blog posts:
       </h2>
         <BlogPosts />

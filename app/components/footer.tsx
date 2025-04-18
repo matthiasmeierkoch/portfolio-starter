@@ -79,7 +79,7 @@ export default function Footer() {
       </div>
 
       {/* Center-Aligned MIT License */}
-      <p className="text-center text-neutral-600 dark:text-neutral-300">
+      <p className="text-center mb-2 text-stone-400 dark:text-stone-500 ">
         © {new Date().getFullYear()} MIT Licensed
       </p>
     </footer>

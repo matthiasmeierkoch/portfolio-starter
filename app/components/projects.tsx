@@ -18,7 +18,7 @@ export function ProjectPosts() {
         .map((projects) => (
           <Link
             key={projects.slug}
-            className="flex items-center justify-between mb-4 bg-white dark:bg-gray-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5"
+            className="flex items-center justify-between mb-4 bg-white dark:bg-zinc-900 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5"
             href={`/projects/${projects.slug}`}
           >
             {/* Left: Image and Title */}

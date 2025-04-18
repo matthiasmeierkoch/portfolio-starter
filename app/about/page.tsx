@@ -7,7 +7,7 @@ export default function Page() {
   return (
     <section className="">
       {/* Profile Section */}
-      <div className="flex flex-row items-center space-x-8 bg-white dark:bg-gray-800 rounded-lg p-4 ring shadow-xl ring-gray-900/5">
+      <div className="flex flex-row items-center space-x-8 bg-white dark:bg-zinc-900 rounded-lg p-6 ring shadow-xl ring-gray-900/5">
         {/* Image Section */}
         <div className="flex-shrink-0">
           <img
@@ -56,7 +56,7 @@ export default function Page() {
         <h2 className="text-xl text-neutral-900 dark:text-neutral-100 mb-4">Work Experience</h2>
         <div className="space-y-6">
           {/* Work Experience Item */}
-          <div className="flex flex-row space-x-24 bg-white dark:bg-gray-800 rounded-lg p-6 ring shadow-xl ring-gray-900/5">
+          <div className="flex flex-row space-x-24 bg-white dark:bg-zinc-900 rounded-lg p-6 ring shadow-xl ring-gray-900/5">
             {/* Dates Column */}
             <div className="text-neutral-600 dark:text-neutral-400 w-2/4">
               <p>2021 - Present</p>
@@ -77,7 +77,7 @@ export default function Page() {
           </div>
 
           {/* Another Work Experience Item */}
-          <div className="flex flex-row space-x-24 bg-white dark:bg-gray-800 rounded-lg p-6 ring shadow-xl ring-gray-900/5">
+          <div className="flex flex-row space-x-24 bg-white dark:bg-zinc-900 rounded-lg p-6 ring shadow-xl ring-gray-900/5">
             {/* Dates Column */}
             <div className="text-neutral-600 dark:text-neutral-400 w-2/4">
               <p>2017 - 2020</p>
@@ -98,7 +98,7 @@ export default function Page() {
           </div>
 
           {/* Another Work Experience Item */}
-          <div className="flex flex-row space-x-24 bg-white dark:bg-gray-800 rounded-lg p-6 ring shadow-xl ring-gray-900/5 mb-16">
+          <div className="flex flex-row space-x-24 bg-white dark:bg-zinc-900 rounded-lg p-6 ring shadow-xl ring-gray-900/5 mb-16">
             {/* Dates Column */}
             <div className="text-neutral-600 dark:text-neutral-400 w-2/4">
               <p>2015 - 2017</p>
