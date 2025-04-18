@@ -1,6 +1,23 @@
 import Link from 'next/link'
 import { formatDate, getProjects } from 'app/projects/utils'
 
+function ArrowIcon() {
+  return (
+    <svg
+      width="12"
+      height="12"
+      viewBox="0 0 12 12"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M2.07102 11.3494L0.963068 10.2415L9.2017 1.98864H2.83807L2.85227 0.454545H11.8438V9.46023H10.2955L10.3097 3.09659L2.07102 11.3494Z"
+        fill="currentColor"
+      />
+    </svg>
+  )
+}
+
 export function ProjectPosts() {
   let allProjects = getProjects()
 
@@ -36,10 +53,15 @@ export function ProjectPosts() {
             </div>
 
             {/* Right: Start Date and End Date */}
-            <div className="flex flex-col items-end">
+            <div className="hidden md:flex flex-col items-end">
               <p className="text-stone-400 dark:text-stone-500 w-4/4 truncate tabular-nums">
-              {formatDate(projects.metadata.startDate, false)} - {formatDate(projects.metadata.endDate, false)}
+                {formatDate(projects.metadata.startDate, false)} - {formatDate(projects.metadata.endDate, false)}
               </p>
+            </div>
+
+            {/* Arrow Icon */}
+            <div className="block md:hidden">
+              <ArrowIcon />
             </div>
           </Link>
         ))}
