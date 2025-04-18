@@ -7,17 +7,17 @@ export default function Page() {
   return (
     <section className="">
       {/* Profile Section */}
-      <div className="flex flex-row items-center space-x-8 bg-white dark:bg-zinc-900 rounded-lg p-6 ring shadow-xl ring-gray-900/5">
+      <div className="flex items-center bg-white dark:bg-zinc-900 rounded-lg p-6 ring shadow-xl ring-gray-900/5">
         {/* Image Section */}
-        <div className="flex-shrink-0">
+        <div className="shrink-0">
           <img
             src="/uploads/profile.png"
             alt="Matthias Koch"
-            className="w-40 h-40 md:w-24 md:h-24 rounded-full shadow-lg"
+            className="w-16 h-16 md:w-24 md:h-24 rounded-full shadow-lg"
           />
         </div>
         {/* Text Section */}
-        <div className="flex flex-col justify-center items-start text-left">
+        <div className="flex flex-col justify-center items-start text-left ml-4 md:ml-8">
           <h2 className="text-xl tracking-tight text-neutral-900 dark:text-neutral-100 mt-2">
             Matthias Koch
           </h2>
@@ -30,7 +30,7 @@ export default function Page() {
             >
               Google
             </a>{' '}
-            in Zurich, Switzerland
+            in Zurich, Switzerland.
           </p>
         </div>
       </div>
