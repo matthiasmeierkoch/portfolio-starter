@@ -18,7 +18,7 @@ export default function Page() {
         </div>
         {/* Text Section */}
         <div className="flex flex-col justify-center items-start text-left ml-4 md:ml-8">
-          <h2 className="text-xl tracking-tight text-neutral-900 dark:text-neutral-100 mt-2">
+          <h2 className="text-xl text-neutral-900 dark:text-neutral-100 mt-2">
             Matthias Koch
           </h2>
           <p className="text-neutral-600 dark:text-neutral-400">
@@ -37,7 +37,7 @@ export default function Page() {
 
       {/* Description Section */}
       <div className="mt-8">
-        <h2 className="text-xl text-neutral-900 dark:text-neutral-100">About</h2>
+        <h2 className=" mb-4 text-stone-400 dark:text-stone-500">About</h2>
         <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed">
           Hi there 👋 I love solving problems with creativity and I do this everyday as a user experience and interface designer. Currently I'm working at{' '}
           <a
@@ -53,7 +53,7 @@ export default function Page() {
 
       {/* Work Experience Section */}
       <div className="mt-12">
-        <h2 className="text-xl text-neutral-900 dark:text-neutral-100 mb-4">Work Experience</h2>
+        <h2 className="mb-4 text-stone-400 dark:text-stone-500 mb-4">Work experience</h2>
         <div className="space-y-6">
           {/* Work Experience Item */}
           <div className="flex flex-row space-x-24 bg-white dark:bg-zinc-900 rounded-lg p-6 ring shadow-xl ring-gray-900/5">

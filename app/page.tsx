@@ -23,14 +23,14 @@ export default function Page() {
 
     <div className="my-8">
       <h2 className="mb-4 text-stone-400 dark:text-stone-500">
-        Projects:
+        Projects
       </h2>
         <ProjectPosts />
       </div>
 
       <div className="my-8">
       <h2 className="mb-4 text-stone-400 dark:text-stone-500">
-        Blog posts:
+        Blog posts
       </h2>
         <BlogPosts />
       </div>
