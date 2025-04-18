@@ -18,7 +18,7 @@ export function ProjectPosts() {
         .map((projects) => (
           <Link
             key={projects.slug}
-            className="flex items-center justify-between mb-4 bg-white dark:bg-zinc-900 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5"
+            className="flex items-center justify-between mb-4 bg-white dark:bg-zinc-900 dark:hover:bg-zinc-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5"
             href={`/projects/${projects.slug}`}
           >
             {/* Left: Image and Title */}
@@ -37,7 +37,7 @@ export function ProjectPosts() {
 
             {/* Right: Start Date and End Date */}
             <div className="flex flex-col items-end">
-              <p className="text-neutral-600 dark:text-neutral-400 tabular-nums">
+              <p className="text-stone-400 dark:text-stone-500 tabular-nums">
               {formatDate(projects.metadata.startDate, false)} - {formatDate(projects.metadata.endDate, false)}
               </p>
             </div>

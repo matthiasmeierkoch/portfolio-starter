@@ -40,7 +40,7 @@ export default function Footer() {
 
         {/* Right: Social Links */}
         <div className="mb-8 flex flex-col items-start md:items-end">
-          <ul className="font-sm flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
+          <ul className="font-sm flex flex-col space-x-2 m-2 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
             <li>
               <a
                 className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
@@ -48,8 +48,8 @@ export default function Footer() {
                 target="_blank"
                 href="https://www.linkedin.com/in/matthiasmkoch/"
               >
+                <p className="ml-2 mr-2 h-7">LinkedIn</p>
                 <ArrowIcon />
-                <p className="ml-2 h-7">LinkedIn</p>
               </a>
             </li>
             <li>
@@ -59,8 +59,8 @@ export default function Footer() {
                 target="_blank"
                 href="https://github.com/matthiasmeierkoch"
               >
+                <p className="ml-2 mr-2 h-7">Github</p>
                 <ArrowIcon />
-                <p className="ml-2 h-7">Github</p>
               </a>
             </li>
             <li>
@@ -70,8 +70,8 @@ export default function Footer() {
                 target="_blank"
                 href="https://unsplash.com/de/@matthiasmeierkoch/"
               >
+                <p className="ml-2 mr-2 h-7">Unsplash</p>
                 <ArrowIcon />
-                <p className="ml-2 h-7">Unsplash</p>
               </a>
             </li>
           </ul>

@@ -8,16 +8,16 @@ export default function Page() {
         <br></br>
       <div className='mb-16'>
         <h2 className='text-stone-400 dark:text-stone-500'>
-        18.04.2025, Zürich, Switzerland
+        18.04.2025 – Zürich, Switzerland
       </h2>
       </div>
     <div className="text-lg mb-16 relaxed tracking-normal">
       <p>
-        Hello, nice to meet you – I'm Matthias Koch, a user experience and interface designer currently working at <a href="https://google.com" target="_blank" className="text-blue-600 visited:text-purple-600 bg-gray-100 dark:bg-gray-900 rounded-xl px-2 py-1">Google</a> 
+        Hello, nice to meet you – I'm Matthias Koch, a user experience and interface designer currently working at <a href="https://google.com" target="_blank" className="text-blue-600 visited:text-purple-600 hover:underline">Google </a> 
         where I focus on creating advertiser experiences that connect creators, customers and businesses
       </p>
       <p>
-        Before Google, I was designing TV and cloud products at <a href="https://www.swisscom.ch/de/privatkunden.html" target="_blank" className="text-blue-600 visited:text-purple-600 bg-gray-100 dark:bg-gray-900 rounded-xl px-2 py-1">Swisscom</a> and custom web solutions at <a href='https://www.internezzo.ch/'  target="_blank" className="text-blue-600 visited:text-purple-600 bg-gray-100 dark:bg-gray-900 rounded-xl px-2 py-1">Internezzo</a>
+        Before Google, I was designing TV and cloud products at <a href="https://www.swisscom.ch/de/privatkunden.html" target="_blank" className="text-blue-600 visited:text-purple-600 hover:underline">Swisscom</a> and custom web solutions at <a href='https://www.internezzo.ch/'  target="_blank" className="text-blue-600 visited:text-purple-600 hover:underline">Internezzo</a>
       </p>
     </div>
 
