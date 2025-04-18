@@ -76,9 +76,8 @@ export function formatDate(date: string, includeRelative = false) {
     formattedDate = 'Today'
   }
 
-  // Use 'short' for abbreviated month names
   let fullDate = targetDate.toLocaleString('en-us', {
-    month: 'short', // Abbreviated month names (e.g., Dec)
+    month: 'long',
     day: 'numeric',
     year: 'numeric',
   })
