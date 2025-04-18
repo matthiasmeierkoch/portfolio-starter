@@ -3,10 +3,15 @@ import { ProjectPosts } from './components/projects'
 
 export default function Page() {
   return (
-    <section>
+    <section className="text-stone-900 dark:text-stone-200">
         <h1>User experience and interface designer for digital products based in Switzerland</h1>
         <br></br>
-    <div className="mb-8 text-xl/relaxed tracking-normal">
+      <div className='mb-16'>
+        <h2 className='text-stone-400 dark:text-stone-500'>
+        18.04.2025, Zürich, Switzerland
+      </h2>
+      </div>
+    <div className="text-lg mb-16 relaxed tracking-normal">
       <p>
         Hello, nice to meet you – I'm Matthias Koch, a user experience and interface designer currently working at <a href="https://google.com" target="_blank" className="text-blue-600 visited:text-purple-600 bg-gray-100 dark:bg-gray-900 rounded-xl px-2 py-1">Google</a> 
         where I focus on creating advertiser experiences that connect creators, customers and businesses
@@ -17,8 +22,8 @@ export default function Page() {
     </div>
 
     <div className="my-8">
-      <h2 className="mb-8 text-lg font-semibold ">
-        Projects I've enjoyed working on:
+      <h2 className="mb-4 text-stone-400 dark:text-stone-500 ">
+        Projects:
       </h2>
         <ProjectPosts />
       </div>
