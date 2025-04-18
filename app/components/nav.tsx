@@ -4,11 +4,11 @@ const navItems = {
   '/': {
     name: 'Matthias Koch',
   },
-  '/blog': {
-    name: 'Blog',
-  },
   '/projects': {
     name: 'Projects',
+  },
+  '/blog': {
+    name: 'Blog',
   },
   '/about': {
     name: 'About',
