@@ -14,10 +14,10 @@ export const metadata: Metadata = {
     default: 'Matthias Koch – UX Designer',
     template: 'Matthias Koch – UX Designer',
   },
-  description: 'This is my portfolio.',
+  description: 'Matthias Koch – UX design portfolio',
   openGraph: {
     title: 'Matthias Koch – UX Designer',
-    description: 'This is my portfolio.',
+    description: 'Matthias Koch – UX design portfolio',
     url: baseUrl,
     siteName: 'Matthias Koch UX Design Portfolio',
     locale: 'en_US',
