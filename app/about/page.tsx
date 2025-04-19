@@ -80,7 +80,7 @@ export default function Page() {
           <div className="flex flex-row space-x-24 bg-white dark:bg-zinc-900 rounded-lg p-6 ring shadow-xl ring-gray-900/5">
             {/* Dates Column */}
             <div className="text-neutral-600 dark:text-neutral-400 w-2/4">
-              <p>2017 - 2020</p>
+              <p>2019 - 2021</p>
             </div>
             {/* Role and Company Column */}
             <div className="text-neutral-900 dark:text-neutral-100 w-2/4 ml-0">
@@ -101,7 +101,7 @@ export default function Page() {
           <div className="flex flex-row space-x-24 bg-white dark:bg-zinc-900 rounded-lg p-6 ring shadow-xl ring-gray-900/5 mb-16">
             {/* Dates Column */}
             <div className="text-neutral-600 dark:text-neutral-400 w-2/4">
-              <p>2015 - 2017</p>
+              <p>2017 - 2019</p>
             </div>
             {/* Role and Company Column */}
             <div className="text-neutral-900 dark:text-neutral-100 w-2/4 ml-0">
