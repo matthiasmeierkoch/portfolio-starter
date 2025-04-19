@@ -17,7 +17,7 @@ export default function Page() {
         , where I focus on creating advertiser experiences that connect creators, customers and businesses
       </p>
       <p>
-        Before Google, I was designing TV and cloud products at <a href="https://www.swisscom.ch/de/privatkunden.html" target="_blank" className="text-blue-600 visited:text-purple-600 hover:underline">Swisscom</a> and custom web solutions at <a href='https://www.internezzo.ch/'  target="_blank" className="text-blue-600 visited:text-purple-600 hover:underline">Internezzo</a>
+        Before Google, I was designing TV and cloud products at <a href="https://www.swisscom.ch/de/privatkunden.html" target="_blank" className="text-blue-600 visited:text-purple-600 hover:underline">Swisscom</a> and custom web solutions at <a href='https://www.internezzo.ch/'  target="_blank" className="text-blue-600 visited:text-purple-600 hover:underline">internezzo</a>
       </p>
     </div>
 
