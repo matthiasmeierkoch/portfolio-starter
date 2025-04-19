@@ -31,7 +31,7 @@ function ArrowIcon() {
 
 export default function Footer() {
   return (
-    <footer className="mb-8">
+    <footer className="mb-8 mt-8">
       <div className="flex flex-col md:flex-row justify-between items-start">
         {/* Left: Weekday Greeting */}
         <p className="text-neutral-600 dark:text-neutral-300">
@@ -39,7 +39,7 @@ export default function Footer() {
         </p>
 
         {/* Right: Social Links */}
-        <div className="mb-8 flex flex-col items-start md:items-end">
+        <div className="mb-0 flex flex-col items-start md:items-end">
           <ul className="font-sm flex flex-col space-x-2 m-2 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
             <li>
               <a
