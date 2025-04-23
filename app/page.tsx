@@ -13,11 +13,11 @@ export default function Page() {
       </div>
     <div className="text-lg mb-16 relaxed tracking-normal">
       <p>
-        Hello – I'm Matthias Koch, user experience and interface designer currently working at <a href="https://google.com" target="_blank" className="text-blue-600 visited:text-purple-600 hover:underline">Google</a> 
+        Hello – I'm Matthias Koch, user experience and interface designer currently working at <a href="https://google.com" target="_blank" className="text-blue-500 visited:text-purple-600 hover:underline">Google</a> 
         , where I focus on creating advertiser experiences that connect creators, customers and businesses
       </p>
       <p>
-        Before Google, I was designing TV and cloud products at <a href="https://www.swisscom.ch/de/privatkunden.html" target="_blank" className="text-blue-600 visited:text-purple-600 hover:underline">Swisscom</a> and custom web solutions at <a href='https://www.internezzo.ch/'  target="_blank" className="text-blue-600 visited:text-purple-600 hover:underline">internezzo</a>
+        Before Google, I was designing TV and cloud products at <a href="https://www.swisscom.ch/de/privatkunden.html" target="_blank" className="text-blue-500 visited:text-purple-600 hover:underline">Swisscom</a> and custom web solutions at <a href='https://www.internezzo.ch/'  target="_blank" className="text-blue-500 visited:text-purple-600 hover:underline">internezzo</a>
       </p>
     </div>
 

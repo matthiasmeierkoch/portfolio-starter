@@ -20,7 +20,7 @@ export function EducationExperience() {
                 <a
                   href="https://www.ost.ch/de/weiterbildung/weiterbildungsangebot/informatik/ux-human-computer-interaction/cas-ux-research"
                   target="_blank"
-                  className="text-blue-600 visited:text-purple-600 hover:underline"
+                  className="text-blue-500 visited:text-purple-600 hover:underline"
                 >
                   Ostschweizer Fachhochschule
                 </a>
@@ -42,7 +42,7 @@ export function EducationExperience() {
                 <a
                   href="https://sfgz.ch/angebot/weiterbildung/hoehere-fachschule/IAD"
                   target="_blank"
-                  className="text-blue-600 visited:text-purple-600 hover:underline"
+                  className="text-blue-500 visited:text-purple-600 hover:underline"
                 >
                   School for design Zürich
                 </a>

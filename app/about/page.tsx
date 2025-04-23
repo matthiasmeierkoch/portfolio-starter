@@ -30,7 +30,7 @@ export default function Page() {
             <a
               href="https://google.com"
               target="_blank"
-              className="text-blue-600 visited:text-purple-600 hover:underline"
+              className="text-blue-500 visited:text-purple-600 hover:underline"
             >
               Google
             </a>{' '}
@@ -47,7 +47,7 @@ export default function Page() {
           <a
             href="https://google.com"
             target="_blank"
-            className="text-blue-600 visited:text-purple-600 hover:underline"
+            className="text-blue-500 visited:text-purple-600 hover:underline"
           >
             Google
           </a>{' '}

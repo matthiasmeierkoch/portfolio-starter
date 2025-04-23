@@ -20,7 +20,7 @@ export function WorkExperience() {
                 <a
                   href="https://google.com"
                   target="_blank"
-                  className="text-blue-600 visited:text-purple-600 hover:underline"
+                  className="text-blue-500 visited:text-purple-600 hover:underline"
                 >
                   Google
                 </a>
@@ -42,7 +42,7 @@ export function WorkExperience() {
                 <a
                   href="https://www.swisscom.ch/de/privatkunden.html"
                   target="_blank"
-                  className="text-blue-600 visited:text-purple-600 hover:underline"
+                  className="text-blue-500 visited:text-purple-600 hover:underline"
                 >
                   Swisscom
                 </a>
@@ -64,7 +64,7 @@ export function WorkExperience() {
                 <a
                   href="https://www.internezzo.ch/"
                   target="_blank"
-                  className="text-blue-600 visited:text-purple-600 hover:underline"
+                  className="text-blue-500 visited:text-purple-600 hover:underline"
                 >
                   Internezzo
                 </a>
