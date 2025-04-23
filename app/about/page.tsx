@@ -41,7 +41,7 @@ export default function Page() {
 
       {/* Description Section */}
       <div className="mt-8">
-        <h2 className="mb-4 text-stone-400 dark:text-stone-500">About</h2>
+        <h2 className="mb-4 text-stone-400 dark:text-stone-400">About</h2>
         <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed">
           Hi there 👋 I love solving problems with creativity and I do this everyday as a user experience and interface designer. Currently I'm working at{' '}
           <a
@@ -57,8 +57,8 @@ export default function Page() {
 
       {/* Work Experience Section */}
       <WorkExperience /> {/* Correctly use the WorkExperience component */}
-      {/* Work Experience Section */}
-      <EducationExperience /> {/* Correctly use the WorkExperience component */}
+      {/* Education Experience Section */}
+      <EducationExperience /> {/* Correctly use the EducationExperience component */}
     </section>
   )
 }

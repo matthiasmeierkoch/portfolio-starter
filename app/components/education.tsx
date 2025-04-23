@@ -5,7 +5,7 @@ export function EducationExperience() {
     <section>
       {/* Education Section */}
       <div className="mt-12">
-        <h2 className="mb-4 text-stone-400 dark:text-stone-500">Education</h2>
+        <h2 className="mb-4 text-stone-400 dark:text-stone-400">Education</h2>
         <div className="space-y-6">
           {/* Education Item */}
           <div className="flex flex-row space-x-24 bg-white dark:bg-zinc-900 rounded-lg p-6 ring shadow-xl ring-gray-900/5">

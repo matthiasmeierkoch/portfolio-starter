@@ -7,7 +7,7 @@ export default function Page() {
         <h1>User experience and interface designer for digital products based in Switzerland</h1>
         <br></br>
       <div className='mb-16'>
-        <h2 className='text-stone-400 dark:text-stone-500'>
+        <h2 className='text-stone-400 dark:text-stone-400'>
         18.04.2025 – Zürich, Switzerland
       </h2>
       </div>
@@ -22,14 +22,14 @@ export default function Page() {
     </div>
 
     <div className="my-8">
-      <h2 className="mb-4 text-stone-400 dark:text-stone-500">
+      <h2 className="mb-4 text-stone-400 dark:text-stone-400">
         Projects
       </h2>
         <ProjectPosts />
       </div>
 
       <div className="my-8">
-      <h2 className="mb-4 text-stone-400 dark:text-stone-500">
+      <h2 className="mb-4 text-stone-400 dark:text-stone-400">
         Blog posts
       </h2>
         <BlogPosts />
