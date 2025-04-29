@@ -1,3 +1,5 @@
+'use client'
+
 function weekdayGreeting() {
   const weekdays = [
     'Sunday 🧘',
