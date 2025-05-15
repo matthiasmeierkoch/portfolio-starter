@@ -8,7 +8,7 @@ export default function Page() {
         <br></br>
       <div className='mb-16'>
         <h2 className='text-stone-400 dark:text-stone-400'>
-        18.04.2025 – Zürich, Switzerland
+        15.05.2025 – Zürich, Switzerland
       </h2>
       </div>
     <div className="text-lg mb-16 relaxed tracking-normal">
