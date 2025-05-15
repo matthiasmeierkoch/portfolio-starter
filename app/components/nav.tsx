@@ -1,4 +1,7 @@
+'use client' // Mark this as a Client Component
+
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 const navItems = {
   '/': {
@@ -16,6 +19,8 @@ const navItems = {
 }
 
 export function Navbar() {
+  const pathname = usePathname() // Get the current path
+
   return (
     <aside className="-ml-[8px] mb-16 tracking-normal">
       <div className="lg:sticky lg:top-20">
@@ -27,7 +32,9 @@ export function Navbar() {
           <div>
             <Link
               href="/"
-              className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle py-1 px-2 m-1"
+              className={`transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle py-1 px-2 m-1 ${
+                pathname === '/' ? 'underline underline-offset-4' : ''
+              }`}
             >
               {navItems['/'].name}
             </Link>
@@ -41,7 +48,9 @@ export function Navbar() {
                 <Link
                   key={path}
                   href={path}
-                  className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle py-1 px-2 m-1"
+                  className={`transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle py-1 px-2 m-1 ${
+                    pathname === path ? 'underline underline-offset-4' : ''
+                  }`}
                 >
                   {name}
                 </Link>
