@@ -52,9 +52,15 @@ export default function RootLayout({
         GeistMono.variable
       )}
     >
+      <head>
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.png" sizes="any" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+      </head>
       <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
         <main className="flex-auto min-w-0 mt-6 flex flex-col md:px-0">
-          <Navbar/>
+          <Navbar />
           {children}
           <Footer />
           <Analytics />
