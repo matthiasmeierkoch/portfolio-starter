@@ -9,11 +9,7 @@ This is a porfolio site template complete with a blog. Includes:
 - Syntax highlighting
 - Tailwind v4
 - Vercel Speed Insights / Web Analytics
-- Geist font
-
-## Demo
-
-https://portfolio-blog-starter.vercel.app
+- DM Sans
 
 ## How to Use
 
