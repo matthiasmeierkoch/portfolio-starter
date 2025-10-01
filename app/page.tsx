@@ -1,16 +1,22 @@
 import { BlogPosts } from 'app/components/posts'
 import { ProjectPosts } from './components/projects'
+import HeroContributionGrid from './components/HeroContributionGrid'
 
 export default function Page() {
   return (
     <section className="text-stone-900 dark:text-stone-200">
+        <section className='mb-8 mt-8'>
+           <HeroContributionGrid/>
+        </section>
+        <section className='mb-16'>
         <h1>User experience and interface designer for digital products based in Switzerland</h1>
         <br></br>
-      <div className='mb-16'>
+      <div className='<HeroContributionGrid/>'>
         <h2 className='text-stone-400 dark:text-stone-400'>
-        15.05.2025 – Zürich, Switzerland
+        September 26, 2025 – Zürich, Switzerland
       </h2>
       </div>
+    </section>
     <div className="text-lg mb-16 relaxed tracking-normal">
       <p>
         Hello – I'm Matthias Koch, user experience and interface designer currently working at <a href="https://google.com" target="_blank" className="text-blue-500 visited:text-purple-600 hover:underline">Google</a> 

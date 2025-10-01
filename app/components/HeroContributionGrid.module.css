@@ -1,0 +1,78 @@
+/* components/HeroContributionGrid.module.css */
+
+.contributionGridContainer {
+    /* Define the grid layout */
+    display: grid;
+    /* 5 rows for days, auto columns for weeks - CHANGED FROM 7 TO 5 */
+    grid-template-rows: repeat(5, 1fr);
+    /* Create 24 columns, each the width of a square */
+    grid-template-columns: repeat(24, 1fr); 
+    
+    /* Control the overall size of the visualization */
+    /* This makes it occupy a max width of 100% and a fixed height for visual impact */
+    max-width: 100%; 
+    height: auto;
+    margin: 40px auto 0; /* Center it below the main text */
+    gap: 8px; /* Space between the squares */
+
+    /* Optional: Hide overflow if it shrinks too much on mobile */
+    overflow-x: hidden; 
+    padding-bottom: 5px; /* Add some space for scrollbar if needed */
+}
+
+.square {
+    width: 16px; /* Fixed size for the square */
+    height: 16px; /* Fixed size for the square */
+    min-width: 16px;
+    min-height: 16px;
+    /* Use a slight border-radius to soften the look, typical of modern UI */
+    border-radius: 4px; 
+    /* Ensure the color is set by the inline style from the JS */
+    background-color: #3B82F6; 
+    
+    /* Optional: Add a subtle transition for an interactive feel if you plan to add a hover effect */
+    transition: background-color 0.2s, opacity 0.4s;
+    box-sizing: border-box;
+    opacity: var(--final-opacity, 1);
+    animation: fadeInRandom 1s forwards;
+    animation-delay: var(--delay, 0s);
+}
+
+@keyframes fadeInRandom {
+    from { opacity: 0.2; }
+    to { opacity: var(--final-opacity, 1); }
+}
+
+/* Optional: Add media query for smaller screens */
+@media (max-width: 900px) {
+    .contributionGridContainer {
+        /* On smaller screens, only show a subset of the data for better viewing */
+        grid-template-columns: repeat(24, 1fr);
+        gap: 8px;
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .square {
+        width: 16px;
+        height: 16px;
+        min-width: 16px;
+        min-height: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contributionGridContainer {
+        grid-template-columns: repeat(24, 1fr);
+        gap: 8px;
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .square {
+        width: 16px;
+        height: 16px;
+        min-width: 16px;
+        min-height: 16px;
+    }
+}

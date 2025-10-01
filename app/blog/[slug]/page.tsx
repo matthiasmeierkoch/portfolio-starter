@@ -4,9 +4,8 @@ import { formatDate, getBlogPosts } from 'app/blog/utils'
 import { baseUrl } from 'app/sitemap'
 
 export async function generateStaticParams() {
-  let posts = getBlogPosts()
+  const posts = await getBlogPosts() // <-- await here!
 
-  // Exclude static routes like /projects and /blog
   return posts
     .filter((post) => post.slug !== 'projects' && post.slug !== 'blog')
     .map((post) => ({
@@ -14,23 +13,23 @@ export async function generateStaticParams() {
     }))
 }
 
-export function generateMetadata({ params }) {
-  let post = getBlogPosts().find((post) => post.slug === params.slug)
+export async function generateMetadata({ params }) {
+  const posts = await getBlogPosts() // <-- await here!
+  const post = posts.find((post) => post.slug === params.slug)
 
-  // Exclude static routes like /projects and /blog
   if (!post || params.slug === 'projects' || params.slug === 'blog') {
     return
   }
 
   let {
-    title,
-    publishedAt: publishedTime,
-    summary: description,
-    image,
-  } = post.metadata
+    title = '',
+    publishedAt: publishedTime = '',
+    summary: description = '',
+    image = '',
+  } = post?.metadata || {}
   let ogImage = image
     ? image
-    : `${baseUrl}/og?title=${encodeURIComponent(title)}`
+    : `${baseUrl}/og?title=${encodeURIComponent(title || '')}`
 
   return {
     title,
@@ -56,13 +55,24 @@ export function generateMetadata({ params }) {
   }
 }
 
-export default function Blog({ params }) {
-  let post = getBlogPosts().find((post) => post.slug === params.slug)
+export default async function Blog({ params }) {
+  const posts = await getBlogPosts() // <-- await here!
+  const post = posts.find((post) => post.slug === params.slug)
 
-  // Exclude static routes like /projects and /blog
   if (!post || params.slug === 'projects' || params.slug === 'blog') {
     notFound()
   }
+
+  let {
+    title = '',
+    publishedAt: publishedTime = '',
+    summary: description = '',
+    image = '',
+  } = post.metadata || {}
+
+  let ogImage = image
+    ? image
+    : `${baseUrl}/og?title=${encodeURIComponent(title)}`
 
   return (
     <section>

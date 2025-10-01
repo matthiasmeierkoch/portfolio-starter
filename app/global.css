@@ -16,7 +16,7 @@
   --sh-jsxliterals: #6266d1;
   --sh-property: #e25a1c;
   --sh-entity: #e25a1c;
-  background-color: #ffffff;
+  background-color: #fafaf9;
 }
 
 @media (prefers-color-scheme: dark) {
