@@ -12,7 +12,7 @@ export default function Page() {
         <h1>User experience and interface designer for digital products based in Switzerland</h1>
         <br></br>
       <div className='<HeroContributionGrid/>'>
-        <h2 className='text-stone-400 dark:text-stone-400'>
+        <h2 className='text-stone-400 dark:text-stone-400 text-lg'>
         September 26, 2025 – Zürich, Switzerland
       </h2>
       </div>
@@ -28,14 +28,14 @@ export default function Page() {
     </div>
 
     <div className="my-8">
-      <h2 className="mb-4 text-stone-400 dark:text-stone-400">
+      <h2 className="mb-4 text-stone-400 dark:text-stone-400 text-lg">
         Work samples
       </h2>
         <ProjectPosts />
       </div>
 
       <div className="my-8">
-      <h2 className="mb-4 text-stone-400 dark:text-stone-400">
+      <h2 className="mb-4 text-stone-400 dark:text-stone-400 text-lg">
         Blog posts
       </h2>
         <BlogPosts />

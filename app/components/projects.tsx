@@ -54,7 +54,7 @@ export function ProjectPosts() {
 
             {/* Right: Start Date and End Date */}
             <div className="hidden md:flex flex-col items-end">
-              <p className="text-stone-400 dark:text-stone-500 w-4/4 truncate tabular-nums">
+              <p className="text-stone-400 dark:text-stone-500 w-4/4 truncate tabular-nums text-lg">
                 {formatDate(projects.metadata.startDate, false)} - {formatDate(projects.metadata.endDate, false)}
               </p>
             </div>

@@ -33,7 +33,7 @@ function ArrowIcon() {
 
 export default function Footer() {
   return (
-    <footer className="mb-8 mt-8">
+    <footer className="mb-8 mt-8 text-lg">
       <div className="flex flex-col md:flex-row justify-between items-start">
         {/* Left: Weekday Greeting */}
         <p className="text-neutral-600 dark:text-neutral-300">

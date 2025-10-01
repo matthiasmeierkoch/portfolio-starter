@@ -97,7 +97,7 @@ export default function Project({ params }) {
         </p>
       </div>
       </div>
-      <article className="prose">
+      <article className="prose text-lg">
         <CustomMDX source={project.content} />
       </article>
     </section>
