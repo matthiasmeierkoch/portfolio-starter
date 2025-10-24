@@ -2,11 +2,25 @@ import './global.css'
 import type { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
+import { DM_Sans, Playfair_Display } from 'next/font/google'
 import { Navbar } from './components/nav'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import Footer from './components/footer'
 import { baseUrl } from './sitemap'
+
+// load Google fonts with next/font and expose CSS variable names
+const dmSans = DM_Sans({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-dm-sans',
+})
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-playfair',
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -36,7 +50,8 @@ export const metadata: Metadata = {
   },
 }
 
-const cx = (...classes) => classes.filter(Boolean).join(' ')
+const cx = (...classes: (string | false | null | undefined)[]) =>
+  classes.filter(Boolean).join(' ')
 
 export default function RootLayout({
   children,
@@ -47,14 +62,20 @@ export default function RootLayout({
     <html
       lang="en"
       className={cx(
-        'text-black bg-white dark:text-white dark:bg-black',
-        GeistSans.variable,
-        GeistMono.variable
+        // background / text mode
+        'bg-white dark:bg-neutral-900',
+        'text-neutral-800 dark:text-neutral-200',
+        // Google font variables (DM Sans used as primary sans, Playfair for headings)
+        dmSans.variable,
+        playfair.variable,
+        // optional Geist fonts if available
+        GeistSans?.variable,
+        GeistMono?.variable
       )}
     >
-      <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
+      <body className="antialiased max-w-2xl mx-auto px-4 lg:px-0 mt-8">
+        <Navbar />
         <main className="flex-auto min-w-0 mt-6 flex flex-col md:px-0">
-          <Navbar />
           {children}
           <Footer />
           <Analytics />

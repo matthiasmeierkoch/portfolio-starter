@@ -9,8 +9,7 @@ export const metadata = {
 export default function Page() {
   return (
     <section>
-      <div className="mb-6">
-      <h1 className="font-semibold text-2xl tracking-tighter">Projects</h1>
+      <div className="mb-6 mt-10">
       </div>
       <ProjectPosts/>
     </section>

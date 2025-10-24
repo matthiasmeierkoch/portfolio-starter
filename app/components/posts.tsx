@@ -6,6 +6,10 @@ export function BlogPosts() {
 
   return (
     <div>
+      <h2 className="mb-6 mt-10 text-stone-400 dark:text-stone-400 text-lg">
+        Sometimes I write about things 
+      </h2>
+      
       {allBlogs
         .sort((a, b) => {
           if (
@@ -18,7 +22,7 @@ export function BlogPosts() {
         .map((post) => (
           <Link
             key={post.slug}
-            className="flex items-center justify-between mb-4 bg-white dark:bg-zinc-900 dark:hover:bg-zinc-800 rounded-lg p-6 ring shadow-xl ring-gray-900/5"
+            className="flex items-center justify-between mb-4 bg-white dark:bg-neutral-950 dark:hover:bg-neutral-800 rounded-lg p-6 ring shadow-xl ring-gray-900/5"
             href={`/blog/${post.slug}`}
           >
             {/* Title on the left */}

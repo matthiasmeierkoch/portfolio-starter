@@ -9,7 +9,7 @@ export default function Page() {
            <HeroContributionGrid/>
         </section>
         <section className='mb-16'>
-        <h1>User experience and interface designer for digital products based in Switzerland</h1>
+        <h1 className='font-display'>User experience and interface designer for digital products based in Switzerland</h1>
         <br></br>
       <div className='<HeroContributionGrid/>'>
         <h2 className='text-stone-400 dark:text-stone-400 text-lg'>
@@ -17,7 +17,7 @@ export default function Page() {
       </h2>
       </div>
     </section>
-    <div className="text-lg mb-16 relaxed tracking-normal">
+    <div className="text-lg mb-16 relaxed tracking-normal font-sans">
       <p>
         Hello – I'm Matthias Koch, user experience and interface designer currently working at <a href="https://google.com" target="_blank" className="text-blue-500 visited:text-purple-600 hover:underline">Google</a> 
         , where I focus on creating advertiser experiences that connect creators, customers and businesses
@@ -28,17 +28,11 @@ export default function Page() {
     </div>
 
     <div className="my-8">
-      <h2 className="mb-4 text-stone-400 dark:text-stone-400 text-lg">
-        Work samples
-      </h2>
-        <ProjectPosts />
+        <ProjectPosts/>
       </div>
 
       <div className="my-8">
-      <h2 className="mb-4 text-stone-400 dark:text-stone-400 text-lg">
-        Blog posts
-      </h2>
-        <BlogPosts />
+        <BlogPosts/>
       </div>
     </section>
   )

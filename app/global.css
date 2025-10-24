@@ -1,6 +1,18 @@
-@import 'tailwindcss';
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* app/globals.css */
 
+@import "tailwindcss";
+
+/* Define the font families using the @theme directive */
+@theme {
+  /* Maps to the 'font-sans' utility class */
+  --font-sans: var(--font-dm-sans); 
+  
+  /* Maps to a new 'font-display' utility class */
+  --font-display: var(--font-playfair);
+}
+
+/* You might need to add this if not present, though in v4 it's often automatic */
+@tailwind utilities;
 
 ::selection {
   background-color: #47a3f3;
@@ -97,15 +109,12 @@ p{
 }
 
 h1 {
-  @apply text-4xl font-medium tracking-normal mt-6 mb-2;
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
+  @apply font-serif text-5xl tracking-normal mt-6 mb-2;
   font-style: italic;
-  line-height: 3.5rem;
 }
 
 .prose h1 {
-  @apply text-4xl font-medium tracking-normal mt-6 mb-2;
+  @apply text-3xl font-serif tracking-normal mt-6 mb-2;
 }
 
 .prose h2 {

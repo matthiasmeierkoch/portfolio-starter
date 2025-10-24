@@ -8,7 +8,7 @@ export function EducationExperience() {
         <h2 className="mb-4 text-stone-400 dark:text-stone-400">Education</h2>
         <div className="space-y-6">
           {/* Education Item */}
-          <div className="flex flex-row space-x-24 bg-white dark:bg-zinc-900 rounded-lg p-6 ring shadow-xl ring-gray-900/5">
+          <div className="flex flex-row space-x-24 bg-white dark:bg-neutral-950 rounded-lg p-6 ring shadow-xl ring-gray-900/5">
             {/* Dates Column */}
             <div className="text-neutral-600 dark:text-neutral-400 w-2/4">
               <p>2021 - 2022</p>
@@ -30,7 +30,7 @@ export function EducationExperience() {
           </div>
 
           {/* Another Education Item */}
-          <div className="flex flex-row space-x-24 bg-white dark:bg-zinc-900 rounded-lg p-6 ring shadow-xl ring-gray-900/5 mb-16">
+          <div className="flex flex-row space-x-24 bg-white dark:bg-neutral-950 rounded-lg p-6 ring shadow-xl ring-gray-900/5 mb-16">
             {/* Dates Column */}
             <div className="text-neutral-600 dark:text-neutral-400 w-2/4">
               <p>2017 - 2020</p>

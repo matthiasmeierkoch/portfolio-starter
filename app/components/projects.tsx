@@ -23,6 +23,8 @@ export function ProjectPosts() {
 
   return (
     <div>
+      <h2 className='mb-6 text-stone-400 dark:text-stone-400 text-lg'>Projects I have enjoyed working on</h2>
+      
       {allProjects
         .sort((a, b) => {
           if (
@@ -35,7 +37,7 @@ export function ProjectPosts() {
         .map((projects) => (
           <Link
             key={projects.slug}
-            className="flex items-center justify-between mb-4 bg-white dark:bg-zinc-900 dark:hover:bg-zinc-800 rounded-lg p-6 ring shadow-xl ring-gray-900/5"
+            className="flex items-center justify-between mb-4 bg-white dark:bg-neutral-950 dark:hover:bg-neutral-800 rounded-lg p-6 ring shadow-xl ring-gray-900/5"
             href={`/projects/${projects.slug}`}
           >
             {/* Left: Image and Title */}

@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <section className="mt-8">
       {/* Profile Section */}
-      <div className="flex items-center bg-white dark:bg-zinc-900 rounded-lg p-6 ring shadow-xl ring-gray-900/5">
+      <div className="flex items-center bg-white dark:bg-neutral-950 rounded-lg p-6 ring shadow-xl ring-gray-900/5">
         {/* Image Section */}
         <div className="shrink-0">
           <img
